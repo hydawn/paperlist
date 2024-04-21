@@ -1,0 +1,6 @@
+[submodule "paperlist-backend"]
+	path = paperlist-backend
+	url = git@github.com:hydawn/paperlist-backend.git
+[submodule "paperlist-frontend"]
+	path = paperlist-frontend
+	url = git@github.com:hydawn/paperlist-frontend.git
