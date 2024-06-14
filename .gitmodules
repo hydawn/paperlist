@@ -1,8 +1,8 @@
 [submodule "paperlist-backend"]
 	path = paperlist-backend
-	url = https://github.com:hydawn/paperlist-backend.git
+	url = https://github.com/hydawn/paperlist-backend.git
 #	url = git@github.com:hydawn/paperlist-backend.git
 [submodule "paperlist-frontend"]
 	path = paperlist-frontend
-	url = https://github.com:hydawn/paperlist-frontend.git
+	url = https://github.com/hydawn/paperlist-frontend.git
 #	url = git@github.com:hydawn/paperlist-frontend.git
