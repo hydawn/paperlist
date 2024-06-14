@@ -1,0 +1,31 @@
+services:
+  frontend:
+    build:
+      context: ./paperlist-frontend
+      dockerfile: Dockerfile
+    expose:
+      - "80"
+    depends_on:
+      - backend
+
+  backend:
+    build:
+      context: ./paperlist-backend
+      dockerfile: Dockerfile
+    volumes:
+      - ./paperlist-backend:/app
+      - ./paperlist-backend/db.sqlite3:/app/db.sqlite3
+    expose:
+      - "8000"
+    environment:
+      - DEBUG=False
+      - DJANGO_SETTINGS_MODULE=paperlistbackend.settings
+
+  nginx:
+    build:
+      context: ./nginx
+    ports:
+      - "8040:80"
+    depends_on:
+      - frontend
+      - backend
